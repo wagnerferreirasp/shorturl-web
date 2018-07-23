@@ -1,23 +1,28 @@
-
 <!doctype html>
 <html lang="en">
-<div th:replace="head"></div>
-<body>
-<div class="container">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
 
-    <div class="text-center sm-4">
-        <img class="sm-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h1 class="h3 sm-3 font-weight-normal">Short URL</h1>
-        <p>Build form controls with floating labels via the pseudo-element.
+    <title>ShortURL - WEB</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/webjars/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<form method="post" action="encurta" class="form-signin">
+    <div class="text-center mb-4">
+        <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">ShortURL - WEB</h1>
     </div>
 
     <div class="form-label-group">
-        <label for="inputURL">URL original</label>
-        <input type="url" id="inputURL" class="form-control" placeholder="URL Original" required autofocus>
+        <input type="url" id="inputOriginalURL" class="form-control" required autofocus>
     </div>
-
-    <button id="btnEncurtarURL" class="btn btn-lg btn-primary btn-block" type="submit">Encurtar URL</button>
-</div>
-
+    <button type="submit" class="btn btn-lg btn-primary btn-block">Encurtar URL</button>
+</form>
 </body>
 </html>
